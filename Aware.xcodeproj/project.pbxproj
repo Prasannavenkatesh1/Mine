@@ -10,6 +10,7 @@
 		84A34E24229079DA00FFFBAB /* Aware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A34E1A229079DA00FFFBAB /* Aware.framework */; };
 		84A34E29229079DA00FFFBAB /* AwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A34E28229079DA00FFFBAB /* AwareTests.swift */; };
 		84A34E2B229079DA00FFFBAB /* Aware.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A34E1D229079DA00FFFBAB /* Aware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A34E3522907AC500FFFBAB /* MyAwareFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A34E3422907AC500FFFBAB /* MyAwareFramework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		84A34E23229079DA00FFFBAB /* AwareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A34E28229079DA00FFFBAB /* AwareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwareTests.swift; sourceTree = "<group>"; };
 		84A34E2A229079DA00FFFBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A34E3422907AC500FFFBAB /* MyAwareFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwareFramework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				84A34E1D229079DA00FFFBAB /* Aware.h */,
 				84A34E1E229079DA00FFFBAB /* Info.plist */,
+				84A34E3422907AC500FFFBAB /* MyAwareFramework.swift */,
 			);
 			path = Aware;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					84A34E19229079DA00FFFBAB = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					84A34E22229079DA00FFFBAB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A34E3522907AC500FFFBAB /* MyAwareFramework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		84A34E2F229079DA00FFFBAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.amtrack.Aware;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		84A34E30229079DA00FFFBAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		84A34E32229079DA00FFFBAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AwareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		84A34E33229079DA00FFFBAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AwareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
